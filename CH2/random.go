@@ -16,7 +16,7 @@ func main(){
 	MAX := 0
 	MIN := 0
 	TOTAL := 0
-	
+
 	if len(os.Args) > 3 {
 		MIN, _ = strconv.Atoi(os.Args[1])
 		MAX, _ = strconv.Atoi(os.Args[2])
