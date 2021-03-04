@@ -18,7 +18,7 @@ func main() {
 		fmt.Printf("%d ", number)
 	}
 	fmt.Printf("\n")
-	
+
 	twoD := [3][3]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
 	twoD[1][2] = 15
 	for _, number := range twoD {
