@@ -13,7 +13,7 @@ func main() {
 	match, _ = regexp.MatchString("Tsoukalos", "Mihalis tsoukalos")
 	fmt.Println(match) // false
 
-	parse, err := regexp.Compile("[Mm]ihalis")
+	parse, err := regexp.Compile("[Mm]ihalis") // returns a regex.Regexp variable
 
 	if err != nil {
 		fmt.Printf("Error compiling RE: %s\n", err)
