@@ -12,13 +12,13 @@ type Tree struct {
 	Right *Tree
 }
 
-func traverse(t *Tree) {
+func traverse2(t *Tree) {
 	if t == nil {
 		return
 	}
-	traverse(t.Left)
+	traverse2(t.Left)
 	fmt.Print(t.Value, " ")
-	traverse(t.Right)
+	traverse2(t.Right)
 }
 
 func create(n int) *Tree {
@@ -48,7 +48,7 @@ func insert(t *Tree, v int) *Tree {
 
 func main() {
 	tree := create(30)
-	traverse(tree)
+	traverse2(tree)
 	fmt.Println()
 	fmt.Println("The value of the root of the tree is", tree.Value)
 }
